@@ -1,0 +1,41 @@
+a=[int(x) for x in input().split()]
+for i in range(0,len(a)-1):
+    if((i%2==1)&(i>=1)&(i!=-1)&(i<=(len(a)-1))):
+        j=i-1
+        k=i+1
+        if((a[j]>a[k])&(a[j]>a[i])):
+            t=a[j]
+            a[j]=a[i]
+            a[i]=t
+        elif((a[k]>a[i])&(a[k]>a[j])):
+            t=a[k]
+            a[k]=a[i]
+            a[i]=t
+        else:
+            a[i]=a[i]
+    elif((i%2==0)&(i!=-1)&(i>=2)&(i<=(len(a)-1))):
+        j=i-1
+        k=i+1
+        if((a[j]<a[k])&(a[j]<a[i])):
+            t=a[j]
+            a[j]=a[i]
+            a[i]=t
+        elif((a[k]<a[i])&(a[k]<a[j])):
+            t=a[k]
+            a[k]=a[i]
+            a[i]=t
+        else:
+            a[i]=a[i]
+    elif(i==0):
+        k=i+2
+        if(a[k]<a[i]):
+            t=a[k]
+            a[k]=a[i]
+            a[i]=t
+    elif(i==-1):
+        k=i-2
+        if(a[i]>a[k]):
+            t=a[k]
+            a[k]=a[i]
+            a[i]=t
+print(a)
