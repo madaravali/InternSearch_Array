@@ -1,1 +1,6 @@
 P1.code chef problem to print the largest sum of all the subsets in an array
+
+P3.find subarray with some given sum:finding where sum lies between which two indices
+P4.equilibrium array of an array:sum of elements at lower indices are equal to sum of elements at higher indices
+
+P6.convert array in zigzag fashion such that   a<b>c<d>e<f if a,b,c,d,e,f are elements of an array
