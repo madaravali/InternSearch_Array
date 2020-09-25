@@ -1,11 +1,21 @@
 arr=[int(x) for x in input().split()]
 arr.sort()
+i=0
+j=len(arr)-1
 diff=int(input())
-for i in range(len(arr)-1):
-    for j in range(i+1,len(arr)):
-        if(arr[j]-arr[i]==diff):
-            print("pair found")
-            print(arr[i])
-            print(arr[j])
-            diff=0
-if(diff!=0):print("not found")    
+while(i<j):
+    if(arr[j]-arr[i]>diff):
+        j=j-1
+        if(j==i+1):
+            j=len(arr)-1
+            i=i+1
+    elif(arr[j]-arr[i]<diff):
+        j=len(arr)-1
+        i=i+1
+    else:
+        print(i,j)
+        if(arr[j]==arr[j-1]):
+            j=j-1
+        else:
+            i=i+1
+            j=len(arr)-1
