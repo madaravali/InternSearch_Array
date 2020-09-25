@@ -4,3 +4,5 @@ P3.find subarray with some given sum:finding where sum lies between which two in
 P4.equilibrium array of an array:sum of elements at lower indices are equal to sum of elements at higher indices
 
 P6.convert array in zigzag fashion such that   a<b>c<d>e<f if a,b,c,d,e,f are elements of an array
+P7.finding the indices of the element which give the given difference
+
