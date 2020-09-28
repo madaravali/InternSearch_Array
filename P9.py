@@ -1,5 +1,5 @@
-a=[int(x) for x in input().split()]
-b=[int(x) for x in input().split()]
+a=[float(x) for x in input().split()]
+b=[float(x) for x in input().split()]
 n=len(a)
 i=0
 j=0
