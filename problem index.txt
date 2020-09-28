@@ -5,4 +5,4 @@ P4.equilibrium array of an array:sum of elements at lower indices are equal to s
 
 P6.convert array in zigzag fashion such that   a<b>c<d>e<f if a,b,c,d,e,f are elements of an array
 P7.finding the indices of the element which give the given difference
-
+P8.finding the minimum difference possible for each set of numbers in an array 
